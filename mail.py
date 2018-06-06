@@ -23,10 +23,9 @@ def send_async_mail(mail):
 
 @app.route('/', methods=['POST'])
 def mail():
-    mail = request.data
+    mail = request.form
     send_async_mail.delay(mail)
     return ''
-
 
 if __name__ == '__main__':
     app.run('0.0.0.0', 5000)
