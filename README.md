@@ -5,6 +5,7 @@
 
 ## support: *[outlook, 126, 163, qq]*
 
+## 在mail_config.py中配置邮箱服务(需要打开对应邮箱的SMTP服务)
 
 ## POST: 
 ```
